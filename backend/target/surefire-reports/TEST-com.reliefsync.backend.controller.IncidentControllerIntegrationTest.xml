@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="7.784" tests="13" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="7.745" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@17/17.0.19/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/arushrai/Documents/ReliefSync/backend/target/surefire/surefirebooter-20260514022348099_3.jar /Users/arushrai/Documents/ReliefSync/backend/target/surefire 2026-05-14T02-23-48_020-jvmRun1 surefire-20260514022348099_1tmp surefire_0-20260514022348099_2tmp"/>
+    <property name="sun.java.command" value="/Users/arushrai/Documents/ReliefSync/backend/target/surefire/surefirebooter-20260514024545981_3.jar /Users/arushrai/Documents/ReliefSync/backend/target/surefire 2026-05-14T02-45-45_900-jvmRun1 surefire-20260514024545981_1tmp surefire_0-20260514024545981_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/arushrai/Documents/ReliefSync/backend/target/test-classes:/Users/arushrai/Documents/ReliefSync/backend/target/classes:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.3.0/spring-boot-starter-web-3.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.0/spring-boot-starter-3.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot/3.3.0/spring-boot-3.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.0/spring-boot-autoconfigure-3.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.0/spring-boot-starter-logging-3.3.0.jar:/Users/arushrai/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/Users/arushrai/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/Users/arushrai/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/arushrai/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/arushrai/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/Users/arushrai/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/arushrai/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.0/spring-boot-starter-json-3.3.0.jar:/Users/arushrai/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/Users/arushrai/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar:/Users/arushrai/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.1/jackson-module-parameter-names-2.17.1.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.3.0/spring-boot-starter-tomcat-3.3.0.jar:/Users/arushrai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.24/tomcat-embed-core-10.1.24.jar:/Users/arushrai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.24/tomcat-embed-websocket-10.1.24.jar:/Users/arushrai/.m2/repository/org/springframework/spring-web/6.1.8/spring-web-6.1.8.jar:/Users/arushrai/.m2/repository/org/springframework/spring-beans/6.1.8/spring-beans-6.1.8.jar:/Users/arushrai/.m2/repository/io/micrometer/micrometer-observation/1.13.0/micrometer-observation-1.13.0.jar:/Users/arushrai/.m2/repository/io/micrometer/micrometer-commons/1.13.0/micrometer-commons-1.13.0.jar:/Users/arushrai/.m2/repository/org/springframework/spring-webmvc/6.1.8/spring-webmvc-6.1.8.jar:/Users/arushrai/.m2/repository/org/springframework/spring-context/6.1.8/spring-context-6.1.8.jar:/Users/arushrai/.m2/repository/org/springframework/spring-expression/6.1.8/spring-expression-6.1.8.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-starter-security/3.3.0/spring-boot-starter-security-3.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/spring-aop/6.1.8/spring-aop-6.1.8.jar:/Users/arushrai/.m2/repository/org/springframework/security/spring-security-config/6.3.0/spring-security-config-6.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/security/spring-security-web/6.3.0/spring-security-web-6.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.3.0/spring-boot-starter-data-jpa-3.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.3.0/spring-boot-starter-aop-3.3.0.jar:/Users/arushrai/.m2/repository/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.3.0/spring-boot-starter-jdbc-3.3.0.jar:/Users/arushrai/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/Users/arushrai/.m2/repository/org/springframework/spring-jdbc/6.1.8/spring-jdbc-6.1.8.jar:/Users/arushrai/.m2/repository/org/hibernate/orm/hibernate-core/6.5.2.Final/hibernate-core-6.5.2.Final.jar:/Users/arushrai/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/arushrai/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/arushrai/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/arushrai/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/arushrai/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/arushrai/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/Users/arushrai/.m2/repository/net/bytebuddy/byte-buddy/1.14.16/byte-buddy-1.14.16.jar:/Users/arushrai/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/arushrai/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/arushrai/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/arushrai/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/arushrai/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/arushrai/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/arushrai/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/arushrai/.m2/repository/org/springframework/data/spring-data-jpa/3.3.0/spring-data-jpa-3.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/data/spring-data-commons/3.3.0/spring-data-commons-3.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/spring-orm/6.1.8/spring-orm-6.1.8.jar:/Users/arushrai/.m2/repository/org/springframework/spring-tx/6.1.8/spring-tx-6.1.8.jar:/Users/arushrai/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/arushrai/.m2/repository/org/springframework/spring-aspects/6.1.8/spring-aspects-6.1.8.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.3.0/spring-boot-starter-validation-3.3.0.jar:/Users/arushrai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.24/tomcat-embed-el-10.1.24.jar:/Users/arushrai/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/arushrai/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/arushrai/.m2/repository/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar:/Users/arushrai/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/arushrai/.m2/repository/io/jsonwebtoken/jjwt-api/0.11.5/jjwt-api-0.11.5.jar:/Users/arushrai/.m2/repository/io/jsonwebtoken/jjwt-impl/0.11.5/jjwt-impl-0.11.5.jar:/Users/arushrai/.m2/repository/io/jsonwebtoken/jjwt-jackson/0.11.5/jjwt-jackson-0.11.5.jar:/Users/arushrai/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/arushrai/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/arushrai/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/arushrai/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/Users/arushrai/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-ui/2.6.0/springdoc-openapi-starter-webmvc-ui-2.6.0.jar:/Users/arushrai/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-api/2.6.0/springdoc-openapi-starter-webmvc-api-2.6.0.jar:/Users/arushrai/.m2/repository/org/springdoc/springdoc-openapi-starter-common/2.6.0/springdoc-openapi-starter-common-2.6.0.jar:/Users/arushrai/.m2/repository/io/swagger/core/v3/swagger-core-jakarta/2.2.22/swagger-core-jakarta-2.2.22.jar:/Users/arushrai/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/arushrai/.m2/repository/io/swagger/core/v3/swagger-annotations-jakarta/2.2.22/swagger-annotations-jakarta-2.2.22.jar:/Users/arushrai/.m2/repository/io/swagger/core/v3/swagger-models-jakarta/2.2.22/swagger-models-jakarta-2.2.22.jar:/Users/arushrai/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.17.1/jackson-dataformat-yaml-2.17.1.jar:/Users/arushrai/.m2/repository/org/webjars/swagger-ui/5.17.14/swagger-ui-5.17.14.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.0/spring-boot-starter-test-3.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-test/3.3.0/spring-boot-test-3.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.0/spring-boot-test-autoconfigure-3.3.0.jar:/Users/arushrai/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/arushrai/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/arushrai/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/arushrai/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/arushrai/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/arushrai/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/arushrai/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/Users/arushrai/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/Users/arushrai/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/arushrai/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/arushrai/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/arushrai/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/arushrai/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/arushrai/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/arushrai/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/arushrai/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/arushrai/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/arushrai/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/arushrai/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.16/byte-buddy-agent-1.14.16.jar:/Users/arushrai/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/arushrai/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/arushrai/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/arushrai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/arushrai/.m2/repository/org/springframework/spring-core/6.1.8/spring-core-6.1.8.jar:/Users/arushrai/.m2/repository/org/springframework/spring-jcl/6.1.8/spring-jcl-6.1.8.jar:/Users/arushrai/.m2/repository/org/springframework/spring-test/6.1.8/spring-test-6.1.8.jar:/Users/arushrai/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/arushrai/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/Users/arushrai/.m2/repository/org/springframework/security/spring-security-test/6.3.0/spring-security-test-6.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/security/spring-security-core/6.3.0/spring-security-core-6.3.0.jar:/Users/arushrai/.m2/repository/org/springframework/security/spring-security-crypto/6.3.0/spring-security-crypto-6.3.0.jar:"/>
@@ -32,7 +32,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="/Users/arushrai/Documents/ReliefSync/backend/target/surefire/surefirebooter-20260514022348099_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/arushrai/Documents/ReliefSync/backend/target/surefire/surefirebooter-20260514024545981_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.19+0"/>
@@ -50,7 +50,7 @@
     <property name="user.dir" value="/Users/arushrai/Documents/ReliefSync/backend"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="43717"/>
+    <property name="PID" value="66168"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/arushrai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -63,9 +63,9 @@
     <property name="java.class.version" value="61.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[reliefsync-backend-test] "/>
   </properties>
-  <testcase name="swaggerUiShouldBeAccessibleWithoutAuthentication" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.774">
-    <system-out><![CDATA[02:23:48.646 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.reliefsync.backend.controller.IncidentControllerIntegrationTest]: IncidentControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-02:23:48.730 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.reliefsync.backend.ReliefSyncBackendApplication for test class com.reliefsync.backend.controller.IncidentControllerIntegrationTest
+  <testcase name="swaggerUiShouldBeAccessibleWithoutAuthentication" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.831">
+    <system-out><![CDATA[02:45:46.535 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.reliefsync.backend.controller.IncidentControllerIntegrationTest]: IncidentControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:45:46.623 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.reliefsync.backend.ReliefSyncBackendApplication for test class com.reliefsync.backend.controller.IncidentControllerIntegrationTest
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
@@ -75,27 +75,27 @@
 
  :: Spring Boot ::                (v3.3.0)
 
-2026-05-14T02:23:48.939+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] .r.b.c.IncidentControllerIntegrationTest : Starting IncidentControllerIntegrationTest using Java 17.0.19 with PID 43717 (started by arushrai in /Users/arushrai/Documents/ReliefSync/backend)
-2026-05-14T02:23:48.940+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] .r.b.c.IncidentControllerIntegrationTest : The following 1 profile is active: "test"
-2026-05-14T02:23:48.941+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.boot.SpringApplication               : Loading source class com.reliefsync.backend.ReliefSyncBackendApplication
-2026-05-14T02:23:48.949+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6548bb7d
-2026-05-14T02:23:49.476+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-14T02:23:49.488+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.reliefsync.backend'. Automatic @Repository and @Entity scanning is enabled.
-2026-05-14T02:23:49.514+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
-2026-05-14T02:23:49.935+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-14T02:23:49.981+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2026-05-14T02:23:50.003+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-05-14T02:23:50.171+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-14T02:23:50.186+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] com.zaxxer.hikari.HikariDataSource       : ReliefSyncHikariPool - Starting...
-2026-05-14T02:23:50.290+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] com.zaxxer.hikari.pool.HikariPool        : ReliefSyncHikariPool - Added connection conn0: url=jdbc:h2:mem:reliefsync user=SA
-2026-05-14T02:23:50.291+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] com.zaxxer.hikari.HikariDataSource       : ReliefSyncHikariPool - Start completed.
-2026-05-14T02:23:50.306+05:30  WARN 43717 --- [reliefsync-backend-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-05-14T02:23:50.851+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-14T02:23:50.859+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:46.852+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] .r.b.c.IncidentControllerIntegrationTest : Starting IncidentControllerIntegrationTest using Java 17.0.19 with PID 66168 (started by arushrai in /Users/arushrai/Documents/ReliefSync/backend)
+2026-05-14T02:45:46.853+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] .r.b.c.IncidentControllerIntegrationTest : The following 1 profile is active: "test"
+2026-05-14T02:45:46.854+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.boot.SpringApplication               : Loading source class com.reliefsync.backend.ReliefSyncBackendApplication
+2026-05-14T02:45:46.865+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@57dc9128
+2026-05-14T02:45:47.434+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-14T02:45:47.444+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.reliefsync.backend'. Automatic @Repository and @Entity scanning is enabled.
+2026-05-14T02:45:47.473+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2026-05-14T02:45:47.884+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-14T02:45:47.924+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-05-14T02:45:47.945+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-14T02:45:48.123+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-14T02:45:48.139+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] com.zaxxer.hikari.HikariDataSource       : ReliefSyncHikariPool - Starting...
+2026-05-14T02:45:48.248+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] com.zaxxer.hikari.pool.HikariPool        : ReliefSyncHikariPool - Added connection conn0: url=jdbc:h2:mem:reliefsync user=SA
+2026-05-14T02:45:48.249+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] com.zaxxer.hikari.HikariDataSource       : ReliefSyncHikariPool - Start completed.
+2026-05-14T02:45:48.264+05:30  WARN 66168 --- [reliefsync-backend-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-14T02:45:48.805+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-14T02:45:48.814+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     drop table if exists incidents cascade 
-2026-05-14T02:23:50.862+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:48.820+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     drop table if exists users cascade 
-2026-05-14T02:23:50.866+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:48.823+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     create table incidents (
         created_at timestamp(6) with time zone not null,
         created_by bigint not null,
@@ -108,7 +108,7 @@
         status enum ('IN_PROGRESS','REPORTED','RESOLVED') not null,
         primary key (id)
     )
-2026-05-14T02:23:50.871+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:48.829+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     create table users (
         enabled boolean not null,
         created_at timestamp(6) with time zone not null,
@@ -120,29 +120,29 @@
         role enum ('ROLE_ADMIN','ROLE_COORDINATOR','ROLE_USER','ROLE_VOLUNTEER') not null,
         primary key (id)
     )
-2026-05-14T02:23:50.873+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:48.831+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     alter table if exists incidents 
        add constraint FKehb71to4ns52r63q9n40dio01 
        foreign key (created_by) 
        references users
-2026-05-14T02:23:50.882+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-14T02:23:51.220+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-05-14T02:23:51.221+05:30  WARN 43717 --- [reliefsync-backend-test] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2026-05-14T02:23:51.575+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
-2026-05-14T02:23:51.642+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2026-05-14T02:23:51.679+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ac2b4c6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@326489c4, org.springframework.security.web.context.SecurityContextHolderFilter@1e8c741c, org.springframework.security.web.header.HeaderWriterFilter@586a9fe1, org.springframework.web.filter.CorsFilter@50165a6d, org.springframework.security.web.authentication.logout.LogoutFilter@7c070e78, com.reliefsync.backend.security.JwtAuthenticationFilter@20a7ce0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6db64abf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31e1c7c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ec921f1, org.springframework.security.web.session.SessionManagementFilter@7eb006bd, org.springframework.security.web.access.ExceptionTranslationFilter@39329d81, org.springframework.security.web.access.intercept.AuthorizationFilter@38f7a20]
-2026-05-14T02:23:51.836+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-05-14T02:23:51.862+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-05-14T02:23:52.015+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthenticationFilter urls=[/*] order=2147483647
-2026-05-14T02:23:52.015+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: 
-2026-05-14T02:23:52.027+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
-2026-05-14T02:23:52.027+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
-2026-05-14T02:23:52.027+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
-2026-05-14T02:23:52.027+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .DelegatingFilterProxyRegistrationBean$1 : Filter 'springSecurityFilterChain' configured for use
-2026-05-14T02:23:52.028+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2026-05-14T02:23:52.028+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2026-05-14T02:23:52.029+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2026-05-14T02:23:52.054+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-05-14T02:45:48.839+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-14T02:45:49.180+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-05-14T02:45:49.180+05:30  WARN 66168 --- [reliefsync-backend-test] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-05-14T02:45:49.419+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2026-05-14T02:45:49.489+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-05-14T02:45:49.533+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6919a8a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23c0fcf0, org.springframework.security.web.context.SecurityContextHolderFilter@272cec71, org.springframework.security.web.header.HeaderWriterFilter@77732366, org.springframework.web.filter.CorsFilter@60a4595e, org.springframework.security.web.authentication.logout.LogoutFilter@766ab25b, com.reliefsync.backend.security.JwtAuthenticationFilter@3618486e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6345dc06, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c50503e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a234e1f, org.springframework.security.web.session.SessionManagementFilter@63ead376, org.springframework.security.web.access.ExceptionTranslationFilter@6567de86, org.springframework.security.web.access.intercept.AuthorizationFilter@2fe152aa]
+2026-05-14T02:45:49.696+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-05-14T02:45:49.719+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-05-14T02:45:49.852+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthenticationFilter urls=[/*] order=2147483647
+2026-05-14T02:45:49.852+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: 
+2026-05-14T02:45:49.864+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2026-05-14T02:45:49.865+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
+2026-05-14T02:45:49.865+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
+2026-05-14T02:45:49.865+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .DelegatingFilterProxyRegistrationBean$1 : Filter 'springSecurityFilterChain' configured for use
+2026-05-14T02:45:49.865+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-05-14T02:45:49.865+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-05-14T02:45:49.866+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-05-14T02:45:49.891+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 
 ============================
@@ -1570,10 +1570,10 @@ Unconditional classes:
 
 
 
-2026-05-14T02:23:52.064+05:30  INFO 43717 --- [reliefsync-backend-test] [           main] .r.b.c.IncidentControllerIntegrationTest : Started IncidentControllerIntegrationTest in 3.26 seconds (process running for 3.885)
-2026-05-14T02:23:52.065+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
-2026-05-14T02:23:52.067+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2026-05-14T02:23:52.465+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:49.902+05:30  INFO 66168 --- [reliefsync-backend-test] [           main] .r.b.c.IncidentControllerIntegrationTest : Started IncidentControllerIntegrationTest in 3.201 seconds (process running for 3.847)
+2026-05-14T02:45:49.903+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2026-05-14T02:45:49.905+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-05-14T02:45:50.359+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -1586,7 +1586,7 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:52.480+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:50.376+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -1598,27 +1598,27 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:52.653+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:50.555+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:52.805+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:50.698+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:52.823+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc#redirectToUi(HttpServletRequest)
-2026-05-14T02:23:52.842+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:52.843+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2026-05-14T02:45:50.715+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc#redirectToUi(HttpServletRequest)
+2026-05-14T02:45:50.736+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:50.736+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
 ]]></system-out>
   </testcase>
-  <testcase name="protectedRoutesShouldReturn401WithoutJwt" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.296">
-    <system-out><![CDATA[2026-05-14T02:23:52.856+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+  <testcase name="protectedRoutesShouldReturn401WithoutJwt" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.318">
+    <system-out><![CDATA[2026-05-14T02:45:50.750+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -1631,7 +1631,7 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:52.857+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:50.751+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -1643,26 +1643,26 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:52.865+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:50.760+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:52.866+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:50.761+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:52.990+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:50.891+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:53.114+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.013+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
@@ -1671,8 +1671,8 @@ Unconditional classes:
         (?, ?, ?, ?, ?, ?, ?, default)
 ]]></system-out>
   </testcase>
-  <testcase name="createIncidentShouldReturn201ForAuthenticatedUser" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.381">
-    <system-out><![CDATA[2026-05-14T02:23:53.152+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+  <testcase name="createIncidentShouldReturn201ForAuthenticatedUser" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.362">
+    <system-out><![CDATA[2026-05-14T02:45:51.068+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -1685,7 +1685,7 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:53.153+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.069+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -1697,33 +1697,33 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:53.154+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.070+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:53.154+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.070+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:53.276+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.192+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:53.398+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.314+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:53.449+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.349+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -1737,7 +1737,7 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:53.482+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.382+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -1751,9 +1751,9 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:53.484+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
-2026-05-14T02:23:53.501+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@10fef6da]
-2026-05-14T02:23:53.516+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.385+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
+2026-05-14T02:45:51.401+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@1927c2c6]
+2026-05-14T02:45:51.415+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -1767,19 +1767,19 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:53.520+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.419+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         incidents
         (created_at, created_by, description, location, severity, status, title, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:53.525+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:53.526+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@737e4a7b]
+2026-05-14T02:45:51.424+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:51.424+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@33e09baf]
 ]]></system-out>
   </testcase>
-  <testcase name="updateIncidentShouldReturn200ForAuthenticatedUser" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.315">
-    <system-out><![CDATA[2026-05-14T02:23:53.535+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+  <testcase name="updateIncidentShouldReturn200ForAuthenticatedUser" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.296">
+    <system-out><![CDATA[2026-05-14T02:45:51.431+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -1792,13 +1792,13 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:53.538+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.434+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         incidents 
     where
         id=?
-2026-05-14T02:23:53.539+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.435+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -1810,33 +1810,33 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:53.540+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.436+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:53.540+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.437+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:53.662+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.559+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:53.785+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.681+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:53.787+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.683+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -1850,7 +1850,7 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:53.791+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.687+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -1864,9 +1864,9 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:53.793+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
-2026-05-14T02:23:53.794+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@72d4d9ac]
-2026-05-14T02:23:53.795+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.690+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
+2026-05-14T02:45:51.690+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@d2eddc2]
+2026-05-14T02:45:51.691+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -1880,16 +1880,16 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:53.796+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.692+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         incidents
         (created_at, created_by, description, location, severity, status, title, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:53.796+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:53.797+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@a8dedda]
-2026-05-14T02:23:53.815+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.693+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:51.693+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@4df50829]
+2026-05-14T02:45:51.699+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -1903,9 +1903,9 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:53.818+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#updateIncident(Long, IncidentRequest)
-2026-05-14T02:23:53.819+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@1def2d16]
-2026-05-14T02:23:53.836+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.702+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#updateIncident(Long, IncidentRequest)
+2026-05-14T02:45:51.703+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@344d6bb3]
+2026-05-14T02:45:51.715+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -1931,7 +1931,7 @@ Unconditional classes:
             on cb1_0.id=i1_0.created_by 
     where
         i1_0.id=?
-2026-05-14T02:23:53.842+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.720+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     update
         incidents 
     set
@@ -1944,12 +1944,12 @@ Unconditional classes:
         updated_at=? 
     where
         id=?
-2026-05-14T02:23:53.845+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:53.845+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@765650e4]
+2026-05-14T02:45:51.722+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:51.722+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@32e0b990]
 ]]></system-out>
   </testcase>
   <testcase name="getIncidentByIdShouldReturn404WhenIncidentDoesNotExist" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.266">
-    <system-out><![CDATA[2026-05-14T02:23:53.850+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+    <system-out><![CDATA[2026-05-14T02:45:51.727+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -1962,13 +1962,13 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:53.851+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.728+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         incidents 
     where
         id=?
-2026-05-14T02:23:53.852+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.729+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -1980,33 +1980,33 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:53.853+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.730+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:53.854+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.731+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:53.976+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.852+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:54.098+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.974+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:54.100+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.976+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2020,7 +2020,7 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:54.104+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.980+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2034,8 +2034,8 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:54.106+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#getIncidentById(Long)
-2026-05-14T02:23:54.108+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:51.982+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#getIncidentById(Long)
+2026-05-14T02:45:51.985+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -2061,14 +2061,14 @@ Unconditional classes:
             on cb1_0.id=i1_0.created_by 
     where
         i1_0.id=?
-2026-05-14T02:23:54.110+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.reliefsync.backend.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
-2026-05-14T02:23:54.112+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:54.112+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.ApiErrorResponse@557635ca]
-2026-05-14T02:23:54.112+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.reliefsync.backend.exception.ResourceNotFoundException: Incident not found with id: 9999]
+2026-05-14T02:45:51.988+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.reliefsync.backend.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2026-05-14T02:45:51.989+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:51.989+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.ApiErrorResponse@4e387da1]
+2026-05-14T02:45:51.990+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.reliefsync.backend.exception.ResourceNotFoundException: Incident not found with id: 9999]
 ]]></system-out>
   </testcase>
-  <testcase name="createIncidentShouldReturn400ForValidationErrors(String, String)[1]" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.274">
-    <system-out><![CDATA[2026-05-14T02:23:54.128+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+  <testcase name="createIncidentShouldReturn400ForValidationErrors(String, String)[1]" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.27">
+    <system-out><![CDATA[2026-05-14T02:45:52.005+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -2081,7 +2081,7 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:54.129+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.006+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2093,33 +2093,33 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:54.131+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.007+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:54.131+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.008+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:54.253+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.129+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:54.377+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.251+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:54.385+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.259+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2133,7 +2133,7 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:54.389+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.263+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2147,16 +2147,16 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:54.392+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
-2026-05-14T02:23:54.392+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@4a9e6ea7]
-2026-05-14T02:23:54.397+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.reliefsync.backend.exception.GlobalExceptionHandler#handleValidationException(MethodArgumentNotValidException)
-2026-05-14T02:23:54.397+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:54.397+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.ApiErrorResponse@f4deb35]
-2026-05-14T02:23:54.398+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.reliefsync.backend.dto.IncidentResponse> com.reliefsync.backend.controller.IncidentController.createIncident(com.reliefsync.backend.dto.IncidentRequest,org.springframework.security.core.Authentication): [Field error in object 'incidentRequest' on field 'title': rejected value [null]; codes [NotBlank.incidentRequest.title,NotBlank.title,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [incidentRequest.title,title]; arguments []; default message [title]]; default message [Title is required]] ]
+2026-05-14T02:45:52.265+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
+2026-05-14T02:45:52.265+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@6011176f]
+2026-05-14T02:45:52.270+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.reliefsync.backend.exception.GlobalExceptionHandler#handleValidationException(MethodArgumentNotValidException)
+2026-05-14T02:45:52.270+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:52.270+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.ApiErrorResponse@bf6de66]
+2026-05-14T02:45:52.271+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.reliefsync.backend.dto.IncidentResponse> com.reliefsync.backend.controller.IncidentController.createIncident(com.reliefsync.backend.dto.IncidentRequest,org.springframework.security.core.Authentication): [Field error in object 'incidentRequest' on field 'title': rejected value [null]; codes [NotBlank.incidentRequest.title,NotBlank.title,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [incidentRequest.title,title]; arguments []; default message [title]]; default message [Title is required]] ]
 ]]></system-out>
   </testcase>
-  <testcase name="createIncidentShouldReturn400ForValidationErrors(String, String)[2]" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.29">
-    <system-out><![CDATA[2026-05-14T02:23:54.404+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+  <testcase name="createIncidentShouldReturn400ForValidationErrors(String, String)[2]" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.271">
+    <system-out><![CDATA[2026-05-14T02:45:52.277+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -2169,7 +2169,7 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:54.405+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.278+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2181,33 +2181,33 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:54.406+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.279+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:54.406+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.279+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:54.530+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.401+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:54.682+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.535+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:54.684+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.537+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2221,7 +2221,7 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:54.687+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.540+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2235,16 +2235,16 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:54.689+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
-2026-05-14T02:23:54.689+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@259fb8f5]
-2026-05-14T02:23:54.690+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.reliefsync.backend.exception.GlobalExceptionHandler#handleValidationException(MethodArgumentNotValidException)
-2026-05-14T02:23:54.690+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:54.690+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.ApiErrorResponse@5f571d96]
-2026-05-14T02:23:54.691+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.reliefsync.backend.dto.IncidentResponse> com.reliefsync.backend.controller.IncidentController.createIncident(com.reliefsync.backend.dto.IncidentRequest,org.springframework.security.core.Authentication): [Field error in object 'incidentRequest' on field 'description': rejected value [null]; codes [NotBlank.incidentRequest.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [incidentRequest.description,description]; arguments []; default message [description]]; default message [Description is required]] ]
+2026-05-14T02:45:52.542+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
+2026-05-14T02:45:52.542+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@2eab279]
+2026-05-14T02:45:52.543+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.reliefsync.backend.exception.GlobalExceptionHandler#handleValidationException(MethodArgumentNotValidException)
+2026-05-14T02:45:52.543+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:52.543+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.ApiErrorResponse@87f8146]
+2026-05-14T02:45:52.544+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.reliefsync.backend.dto.IncidentResponse> com.reliefsync.backend.controller.IncidentController.createIncident(com.reliefsync.backend.dto.IncidentRequest,org.springframework.security.core.Authentication): [Field error in object 'incidentRequest' on field 'description': rejected value [null]; codes [NotBlank.incidentRequest.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [incidentRequest.description,description]; arguments []; default message [description]]; default message [Description is required]] ]
 ]]></system-out>
   </testcase>
-  <testcase name="createIncidentShouldReturn400ForValidationErrors(String, String)[3]" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.265">
-    <system-out><![CDATA[2026-05-14T02:23:54.696+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+  <testcase name="createIncidentShouldReturn400ForValidationErrors(String, String)[3]" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.263">
+    <system-out><![CDATA[2026-05-14T02:45:52.549+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -2257,7 +2257,7 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:54.697+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.550+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2269,33 +2269,33 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:54.698+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.551+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:54.698+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.551+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:54.821+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.674+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:54.946+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.799+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:54.948+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.801+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2309,7 +2309,7 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:54.952+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.805+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2323,16 +2323,16 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:54.954+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
-2026-05-14T02:23:54.955+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@21dfec]
-2026-05-14T02:23:54.955+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.reliefsync.backend.exception.GlobalExceptionHandler#handleValidationException(MethodArgumentNotValidException)
-2026-05-14T02:23:54.955+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:54.955+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.ApiErrorResponse@37403f66]
-2026-05-14T02:23:54.956+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.reliefsync.backend.dto.IncidentResponse> com.reliefsync.backend.controller.IncidentController.createIncident(com.reliefsync.backend.dto.IncidentRequest,org.springframework.security.core.Authentication): [Field error in object 'incidentRequest' on field 'severity': rejected value [null]; codes [NotNull.incidentRequest.severity,NotNull.severity,NotNull.com.reliefsync.backend.model.IncidentSeverity,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [incidentRequest.severity,severity]; arguments []; default message [severity]]; default message [Severity is required]] ]
+2026-05-14T02:45:52.806+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
+2026-05-14T02:45:52.807+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@151ce559]
+2026-05-14T02:45:52.807+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.reliefsync.backend.exception.GlobalExceptionHandler#handleValidationException(MethodArgumentNotValidException)
+2026-05-14T02:45:52.807+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:52.807+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.ApiErrorResponse@37ecff9]
+2026-05-14T02:45:52.808+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.reliefsync.backend.dto.IncidentResponse> com.reliefsync.backend.controller.IncidentController.createIncident(com.reliefsync.backend.dto.IncidentRequest,org.springframework.security.core.Authentication): [Field error in object 'incidentRequest' on field 'severity': rejected value [null]; codes [NotNull.incidentRequest.severity,NotNull.severity,NotNull.com.reliefsync.backend.model.IncidentSeverity,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [incidentRequest.severity,severity]; arguments []; default message [severity]]; default message [Severity is required]] ]
 ]]></system-out>
   </testcase>
-  <testcase name="createIncidentShouldReturn400ForValidationErrors(String, String)[4]" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.26">
-    <system-out><![CDATA[2026-05-14T02:23:54.961+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+  <testcase name="createIncidentShouldReturn400ForValidationErrors(String, String)[4]" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.258">
+    <system-out><![CDATA[2026-05-14T02:45:52.813+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -2345,7 +2345,7 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:54.962+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.814+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2357,33 +2357,33 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:54.963+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.815+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:54.963+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.815+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:55.085+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:52.936+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:55.209+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.059+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:55.211+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.061+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2397,7 +2397,7 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.214+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.064+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2411,16 +2411,16 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.216+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
-2026-05-14T02:23:55.216+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@2763500e]
-2026-05-14T02:23:55.217+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.reliefsync.backend.exception.GlobalExceptionHandler#handleValidationException(MethodArgumentNotValidException)
-2026-05-14T02:23:55.217+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:55.217+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.ApiErrorResponse@2416378c]
-2026-05-14T02:23:55.217+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.reliefsync.backend.dto.IncidentResponse> com.reliefsync.backend.controller.IncidentController.createIncident(com.reliefsync.backend.dto.IncidentRequest,org.springframework.security.core.Authentication): [Field error in object 'incidentRequest' on field 'location': rejected value [null]; codes [NotBlank.incidentRequest.location,NotBlank.location,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [incidentRequest.location,location]; arguments []; default message [location]]; default message [Location is required]] ]
+2026-05-14T02:45:53.066+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
+2026-05-14T02:45:53.067+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@2a2d0cff]
+2026-05-14T02:45:53.067+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.reliefsync.backend.exception.GlobalExceptionHandler#handleValidationException(MethodArgumentNotValidException)
+2026-05-14T02:45:53.067+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:53.067+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.ApiErrorResponse@40eb85e9]
+2026-05-14T02:45:53.068+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.reliefsync.backend.dto.IncidentResponse> com.reliefsync.backend.controller.IncidentController.createIncident(com.reliefsync.backend.dto.IncidentRequest,org.springframework.security.core.Authentication): [Field error in object 'incidentRequest' on field 'location': rejected value [null]; codes [NotBlank.incidentRequest.location,NotBlank.location,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [incidentRequest.location,location]; arguments []; default message [location]]; default message [Location is required]] ]
 ]]></system-out>
   </testcase>
-  <testcase name="deleteIncidentShouldReturn204ForAdmin" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.271">
-    <system-out><![CDATA[2026-05-14T02:23:55.222+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+  <testcase name="deleteIncidentShouldReturn204ForAdmin" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.274">
+    <system-out><![CDATA[2026-05-14T02:45:53.072+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -2433,7 +2433,7 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:55.223+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.073+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2445,33 +2445,33 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:55.224+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.074+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:55.224+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.074+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:55.346+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.196+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:55.468+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.321+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:55.470+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.323+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2485,7 +2485,7 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.472+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.325+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2499,7 +2499,7 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.475+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.328+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2513,9 +2513,9 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.477+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
-2026-05-14T02:23:55.478+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@6eda3ade]
-2026-05-14T02:23:55.479+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.330+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
+2026-05-14T02:45:53.330+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@7fcbed77]
+2026-05-14T02:45:53.331+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2529,16 +2529,16 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.480+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.332+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         incidents
         (created_at, created_by, description, location, severity, status, title, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:55.481+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:55.481+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@3b8ec458]
-2026-05-14T02:23:55.484+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.333+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:53.333+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@815e8e3]
+2026-05-14T02:45:53.336+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2552,8 +2552,8 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.485+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#deleteIncident(Long)
-2026-05-14T02:23:55.487+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.338+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#deleteIncident(Long)
+2026-05-14T02:45:53.340+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -2579,18 +2579,18 @@ Unconditional classes:
             on cb1_0.id=i1_0.created_by 
     where
         i1_0.id=?
-2026-05-14T02:23:55.489+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.342+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         incidents 
     where
         id=?
-2026-05-14T02:23:55.490+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:55.490+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2026-05-14T02:45:53.343+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:53.343+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
 ]]></system-out>
   </testcase>
-  <testcase name="listIncidentsShouldSupportPaginationAndSorting" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.294">
-    <system-out><![CDATA[2026-05-14T02:23:55.495+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+  <testcase name="listIncidentsShouldSupportPaginationAndSorting" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.293">
+    <system-out><![CDATA[2026-05-14T02:45:53.348+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -2603,7 +2603,7 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:55.496+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.349+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2615,33 +2615,33 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:55.496+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.350+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:55.497+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.350+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:55.618+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.473+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:55.742+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.595+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:55.744+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.597+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2655,7 +2655,7 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.747+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.601+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2669,9 +2669,9 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.749+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
-2026-05-14T02:23:55.749+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@344ab465]
-2026-05-14T02:23:55.750+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.602+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
+2026-05-14T02:45:53.603+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@2b009051]
+2026-05-14T02:45:53.604+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2685,16 +2685,16 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.751+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.604+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         incidents
         (created_at, created_by, description, location, severity, status, title, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:55.752+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:55.752+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@6d575cd8]
-2026-05-14T02:23:55.754+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.605+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:53.605+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@f64ce35]
+2026-05-14T02:45:53.608+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2708,9 +2708,9 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.755+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
-2026-05-14T02:23:55.756+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@78b906d]
-2026-05-14T02:23:55.757+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.609+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
+2026-05-14T02:45:53.609+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@48515dfc]
+2026-05-14T02:45:53.610+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2724,16 +2724,16 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.757+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.611+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         incidents
         (created_at, created_by, description, location, severity, status, title, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:55.758+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:55.758+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@41f4693a]
-2026-05-14T02:23:55.760+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.612+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:53.612+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@a929b6]
+2026-05-14T02:45:53.614+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2747,8 +2747,8 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:55.762+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#getIncidents(Pageable)
-2026-05-14T02:23:55.768+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.616+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#getIncidents(Pageable)
+2026-05-14T02:45:53.622+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -2778,21 +2778,21 @@ Unconditional classes:
         ? rows 
     fetch
         first ? rows only
-2026-05-14T02:23:55.772+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.626+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         count(i1_0.id) 
     from
         incidents i1_0
-2026-05-14T02:23:55.780+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:55.780+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 2 containing com.reliefsync.backend.dto.IncidentResponse instances]
-2026-05-14T02:23:55.781+05:30  WARN 43717 --- [reliefsync-backend-test] [           main] PageModule$PlainPageSerializationWarning : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+2026-05-14T02:45:53.633+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:53.633+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 2 containing com.reliefsync.backend.dto.IncidentResponse instances]
+2026-05-14T02:45:53.634+05:30  WARN 66168 --- [reliefsync-backend-test] [           main] PageModule$PlainPageSerializationWarning : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
 	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
 	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
 
 ]]></system-out>
   </testcase>
-  <testcase name="deleteIncidentShouldReturn403ForNonAdminUser" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.278">
-    <system-out><![CDATA[2026-05-14T02:23:55.790+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+  <testcase name="deleteIncidentShouldReturn403ForNonAdminUser" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.271">
+    <system-out><![CDATA[2026-05-14T02:45:53.643+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -2805,19 +2805,19 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:55.792+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.644+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         incidents 
     where
         id=?
-2026-05-14T02:23:55.792+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.644+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         incidents 
     where
         id=?
-2026-05-14T02:23:55.793+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.645+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2829,33 +2829,33 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:55.794+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.646+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:55.794+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.646+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:55.925+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.771+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:56.048+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.894+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:56.050+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.896+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2869,7 +2869,7 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:56.053+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.899+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2883,9 +2883,9 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:56.055+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
-2026-05-14T02:23:56.055+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@39c437e9]
-2026-05-14T02:23:56.056+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.900+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
+2026-05-14T02:45:53.901+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@308bd473]
+2026-05-14T02:45:53.902+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2899,16 +2899,16 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:56.057+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.903+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         incidents
         (created_at, created_by, description, location, severity, status, title, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:56.058+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:56.058+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@d594a5a]
-2026-05-14T02:23:56.060+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.904+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:53.904+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@60bc259a]
+2026-05-14T02:45:53.906+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2922,15 +2922,15 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:56.062+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#deleteIncident(Long)
-2026-05-14T02:23:56.063+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.reliefsync.backend.exception.GlobalExceptionHandler#handleAccessDeniedException(AccessDeniedException)
-2026-05-14T02:23:56.063+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:56.063+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.ApiErrorResponse@65263248]
-2026-05-14T02:23:56.063+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-05-14T02:45:53.908+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#deleteIncident(Long)
+2026-05-14T02:45:53.909+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.reliefsync.backend.exception.GlobalExceptionHandler#handleAccessDeniedException(AccessDeniedException)
+2026-05-14T02:45:53.909+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:53.909+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.ApiErrorResponse@6a2b30b9]
+2026-05-14T02:45:53.909+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
 ]]></system-out>
   </testcase>
-  <testcase name="getIncidentByIdShouldReturn200ForAuthenticatedUser" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.269">
-    <system-out><![CDATA[2026-05-14T02:23:56.067+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+  <testcase name="getIncidentByIdShouldReturn200ForAuthenticatedUser" classname="com.reliefsync.backend.controller.IncidentControllerIntegrationTest" time="0.27">
+    <system-out><![CDATA[2026-05-14T02:45:53.913+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -2943,13 +2943,13 @@ Unconditional classes:
         i1_0.updated_at 
     from
         incidents i1_0
-2026-05-14T02:23:56.068+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.914+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         incidents 
     where
         id=?
-2026-05-14T02:23:56.069+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.915+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -2961,33 +2961,33 @@ Unconditional classes:
         u1_0.updated_at 
     from
         users u1_0
-2026-05-14T02:23:56.069+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.915+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:56.069+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:53.916+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     delete 
     from
         users 
     where
         id=?
-2026-05-14T02:23:56.192+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:54.038+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:56.316+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:54.161+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (created_at, email, enabled, full_name, password, role, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:56.317+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:54.164+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -3001,7 +3001,7 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:56.320+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:54.168+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -3015,9 +3015,9 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:56.322+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
-2026-05-14T02:23:56.323+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@c21c296]
-2026-05-14T02:23:56.323+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:54.169+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#createIncident(IncidentRequest, Authentication)
+2026-05-14T02:45:54.170+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.reliefsync.backend.dto.IncidentRequest@767785a4]
+2026-05-14T02:45:54.171+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -3031,16 +3031,16 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:56.324+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:54.171+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     insert 
     into
         incidents
         (created_at, created_by, description, location, severity, status, title, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, default)
-2026-05-14T02:23:56.325+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:56.325+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@6f05062b]
-2026-05-14T02:23:56.327+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:54.172+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:54.172+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@3e13a74]
+2026-05-14T02:45:54.174+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.created_at,
@@ -3054,8 +3054,8 @@ Unconditional classes:
         users u1_0 
     where
         u1_0.email=?
-2026-05-14T02:23:56.329+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#getIncidentById(Long)
-2026-05-14T02:23:56.330+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
+2026-05-14T02:45:54.176+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.reliefsync.backend.controller.IncidentController#getIncidentById(Long)
+2026-05-14T02:45:54.177+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] org.hibernate.SQL                        : 
     select
         i1_0.id,
         i1_0.created_at,
@@ -3081,8 +3081,8 @@ Unconditional classes:
             on cb1_0.id=i1_0.created_by 
     where
         i1_0.id=?
-2026-05-14T02:23:56.331+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-14T02:23:56.331+05:30 DEBUG 43717 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@48d68740]
+2026-05-14T02:45:54.178+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-14T02:45:54.178+05:30 DEBUG 66168 --- [reliefsync-backend-test] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.reliefsync.backend.dto.IncidentResponse@52c22bc5]
 ]]></system-out>
   </testcase>
 </testsuite>

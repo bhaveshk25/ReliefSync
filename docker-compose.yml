@@ -33,6 +33,11 @@ services:
       DB_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
       JWT_SECRET: ${JWT_SECRET:-cmVsaWVmc3luYy1jaGFuZ2UtdGhpcy10by1hLXNlY3VyZS1iYXNlNjQtc2VjcmV0LWtleS1mb3ItcHJvZHVjdGlvbg==}
       JWT_EXPIRATION_MS: ${JWT_EXPIRATION_MS:-86400000}
+      AI_ENABLED: ${AI_ENABLED:-true}
+      AI_API_KEY: ${AI_API_KEY:-}
+      AI_BASE_URL: ${AI_BASE_URL:-https://api.openai.com}
+      AI_MODEL: ${AI_MODEL:-gpt-4o-mini}
+      AI_TIMEOUT_MS: ${AI_TIMEOUT_MS:-5000}
     ports:
       - "8081:8081"
     restart: unless-stopped

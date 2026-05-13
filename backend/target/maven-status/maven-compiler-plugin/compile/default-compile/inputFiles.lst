@@ -1,4 +1,15 @@
 /Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ReliefSyncBackendApplication.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/controller/AIAnalysisController.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/dto/AIAnalysisRequest.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/dto/AIAnalysisResponse.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/dto/AnalysisPriority.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/service/AIAnalysisService.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/service/AIAnalysisServiceImpl.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/service/AIClient.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/service/AIClientException.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/service/OpenAIAIClient.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/service/RuleBasedEmergencyAnalyzer.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/config/AIProperties.java
 /Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/config/JwtProperties.java
 /Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/config/OpenApiConfig.java
 /Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/config/SecurityConfig.java

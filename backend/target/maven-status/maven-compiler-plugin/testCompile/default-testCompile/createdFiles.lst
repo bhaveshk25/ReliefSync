@@ -1,1 +1,3 @@
+com/reliefsync/backend/ai/controller/AIAnalysisControllerIntegrationTest.class
 com/reliefsync/backend/controller/IncidentControllerIntegrationTest.class
+com/reliefsync/backend/ai/service/AIAnalysisServiceImplTest.class
