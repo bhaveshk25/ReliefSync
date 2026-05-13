@@ -9,6 +9,11 @@
 /Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/service/AIClientException.java
 /Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/service/OpenAIAIClient.java
 /Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/ai/service/RuleBasedEmergencyAnalyzer.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/assistant/controller/AssistantController.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/assistant/dto/AssistantChatRequest.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/assistant/dto/AssistantChatResponse.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/assistant/service/AssistantService.java
+/Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/assistant/service/AssistantServiceImpl.java
 /Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/config/AIProperties.java
 /Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/config/JwtProperties.java
 /Users/arushrai/Documents/ReliefSync/backend/src/main/java/com/reliefsync/backend/config/OpenApiConfig.java

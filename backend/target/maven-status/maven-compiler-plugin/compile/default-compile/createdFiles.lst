@@ -6,12 +6,14 @@ com/reliefsync/backend/config/AIProperties.class
 com/reliefsync/backend/dto/ApiErrorResponse.class
 com/reliefsync/backend/controller/HealthController.class
 com/reliefsync/backend/controller/AuthController.class
+com/reliefsync/backend/assistant/service/AssistantServiceImpl.class
 com/reliefsync/backend/dto/IncidentResponse.class
 com/reliefsync/backend/security/CustomAccessDeniedHandler.class
 com/reliefsync/backend/ai/service/AIClientException.class
 com/reliefsync/backend/service/AuthService.class
 com/reliefsync/backend/dto/ApiErrorResponse$ApiErrorResponseBuilder.class
 com/reliefsync/backend/ai/controller/AIAnalysisController.class
+com/reliefsync/backend/assistant/controller/AssistantController.class
 com/reliefsync/backend/dto/IncidentResponse$IncidentResponseBuilder.class
 com/reliefsync/backend/model/User$UserBuilder.class
 com/reliefsync/backend/ai/service/OpenAIAIClient$ResponseFormat.class
@@ -27,6 +29,7 @@ com/reliefsync/backend/controller/TestController.class
 com/reliefsync/backend/ai/service/OpenAIAIClient.class
 com/reliefsync/backend/ai/service/AIClient.class
 com/reliefsync/backend/dto/IncidentRequest.class
+com/reliefsync/backend/assistant/dto/AssistantChatResponse$AssistantChatResponseBuilder.class
 com/reliefsync/backend/dto/AuthResponse$AuthResponseBuilder.class
 com/reliefsync/backend/service/IncidentServiceImpl.class
 com/reliefsync/backend/service/UserService.class
@@ -41,10 +44,13 @@ com/reliefsync/backend/ai/service/OpenAIAIClient$RequestPayload.class
 com/reliefsync/backend/exception/GlobalExceptionHandler.class
 com/reliefsync/backend/ai/service/AIAnalysisService.class
 com/reliefsync/backend/config/AIProperties$OpenAi.class
+com/reliefsync/backend/assistant/service/AssistantService.class
 com/reliefsync/backend/repository/UserRepository.class
+com/reliefsync/backend/assistant/dto/AssistantChatResponse.class
 com/reliefsync/backend/config/SecurityConfig.class
 com/reliefsync/backend/service/IncidentService.class
 com/reliefsync/backend/model/IncidentStatus.class
+com/reliefsync/backend/assistant/dto/AssistantChatRequest.class
 com/reliefsync/backend/model/Incident.class
 com/reliefsync/backend/controller/IncidentController.class
 com/reliefsync/backend/model/Role.class
