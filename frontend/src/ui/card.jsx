@@ -1,7 +1,14 @@
 import { cn } from "@/utils/cn";
 
-export function Card({ className, ...props }) {
-  return <div className={cn("glass-panel rounded-2xl", className)} {...props} />;
+export function Card({ className, variant = "default", ...props }) {
+  const variants = {
+    default: "glass-panel rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-glow",
+    elevated: "glass-panel rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-xl hover:shadow-2xl transition-shadow duration-300",
+    interactive: "glass-panel rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-glow hover-lift",
+    outlined: "rounded-2xl border border-input bg-background/50",
+  };
+
+  return <div className={cn(variants[variant], className)} {...props} />;
 }
 
 export function CardHeader({ className, ...props }) {
@@ -9,7 +16,7 @@ export function CardHeader({ className, ...props }) {
 }
 
 export function CardTitle({ className, ...props }) {
-  return <h3 className={cn("text-lg font-semibold", className)} {...props} />;
+  return <h3 className={cn("text-lg font-semibold text-foreground", className)} {...props} />;
 }
 
 export function CardDescription({ className, ...props }) {
