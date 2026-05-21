@@ -5,6 +5,7 @@
 - Spring Boot 3
 - PostgreSQL
 - Docker
+- Jenkins
 - JWT Authentication
 
 ## Architecture Rules
