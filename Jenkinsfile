@@ -44,15 +44,7 @@ pipeline {
         stage('Frontend Tests') {
             steps {
                 dir('frontend') {
-                    // Check if test script exists
-                    script {
-                        def hasTestScript = sh(script: 'npm run | grep test', returnStatus: true) == 0
-                        if (hasTestScript) {
-                            sh 'npm run test'
-                        } else {
-                            echo 'No test script found in frontend, skipping tests.'
-                        }
-                    }
+                    sh 'npm test'
                 }
             }
         }
@@ -84,7 +76,7 @@ pipeline {
                 sh '''
                 echo "Testing backend health..."
                 for i in {1..10}; do
-                    if curl -s http://localhost:8081/actuator/health 2>/dev/null | grep -q '"status":"UP"'; then
+                    if curl -s http://localhost:8081/api/health 2>/dev/null | grep -q '"status":"UP"'; then
                         echo "Backend is healthy"
                         break
                     fi
@@ -92,8 +84,17 @@ pipeline {
                     sleep 5
                 done
                 '''
-                // Frontend is served by nginx? We don't have a frontend service in docker-compose yet.
-                // We'll skip frontend smoke test for now, or we can check if the frontend container is added later.
+                sh '''
+                echo "Testing frontend availability..."
+                for i in {1..10}; do
+                    if curl -sf http://localhost/ >/dev/null 2>&1; then
+                        echo "Frontend is reachable"
+                        break
+                    fi
+                    echo "Waiting for frontend..."
+                    sleep 5
+                done
+                '''
             }
         }
 

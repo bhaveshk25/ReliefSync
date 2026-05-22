@@ -215,7 +215,6 @@ export function AnalyticsCharts({ chartData }) {
                   contentStyle={{ backgroundColor: "rgba(30, 30, 46, 0.8)", border: "1px solid rgba(255,255,255,0.1)" }}
                   labelStyle={{ color: "#94A3B8", fontSize: 12 }}
                   formatter={(value, name) => `${name}: ${value} incidents`}
-                  formatter={(value, name, percent) => `${name}: ${value} (${(percent * 100).toFixed(1)}%)`}
                 />
                 <Legend
                   verticalAlign="bottom"
