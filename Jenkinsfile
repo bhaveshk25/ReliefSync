@@ -7,6 +7,8 @@ pipeline {
         FRONTEND_IMAGE = 'reliefsync-frontend'
         // Docker Compose file
         DOCKER_COMPOSE_FILE = 'docker-compose.yml'
+        // Jenkins shell steps do not always inherit the interactive PATH on macOS
+        PATH = '/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
     }
 
     stages {
