@@ -7,6 +7,10 @@ pipeline {
         FRONTEND_IMAGE = 'reliefsync-frontend'
         // Docker Compose file
         DOCKER_COMPOSE_FILE = 'docker-compose.yml'
+        COMPOSE_PROJECT_NAME = 'reliefsync-ci'
+        POSTGRES_PORT = '5433'
+        BACKEND_PORT = '8082'
+        FRONTEND_PORT = '8088'
         // Jenkins shell steps do not always inherit the interactive PATH on macOS
         PATH = '/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
     }
@@ -54,6 +58,7 @@ pipeline {
         stage('Docker Build') {
             steps {
                 sh '''
+                docker-compose -f ${DOCKER_COMPOSE_FILE} down --remove-orphans || true
                 docker-compose -f ${DOCKER_COMPOSE_FILE} build
                 '''
             }
@@ -78,7 +83,7 @@ pipeline {
                 sh '''
                 echo "Testing backend health..."
                 for i in {1..10}; do
-                    if curl -s http://localhost:8081/api/health 2>/dev/null | grep -q '"status":"UP"'; then
+                    if curl -s http://localhost:${BACKEND_PORT}/api/health 2>/dev/null | grep -q '"status":"UP"'; then
                         echo "Backend is healthy"
                         break
                     fi
@@ -89,7 +94,7 @@ pipeline {
                 sh '''
                 echo "Testing frontend availability..."
                 for i in {1..10}; do
-                    if curl -sf http://localhost/ >/dev/null 2>&1; then
+                    if curl -sf http://localhost:${FRONTEND_PORT}/ >/dev/null 2>&1; then
                         echo "Frontend is reachable"
                         break
                     fi
