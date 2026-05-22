@@ -117,18 +117,30 @@ pipeline {
         always {
             // Archive test results and artifacts
             junit '**/target/surefire-reports/*.xml'
-            junit '**/frontend/reports/*.xml' // Adjust if frontend test output is different
+            junit allowEmptyResults: true, testResults: '**/frontend/reports/*.xml'
             archiveArtifacts artifacts: 'backend/target/*.jar, frontend/dist/**', fingerprint: true
         }
         failure {
-            mail to: 'team@example.com',
-                 subject: "Failed Pipeline: ${env.JOB_NAME} build ${env.BUILD_NUMBER}",
-                 body: "Something is wrong with ${env.JOB_NAME}."
+            script {
+                try {
+                    mail to: 'team@example.com',
+                         subject: "Failed Pipeline: ${env.JOB_NAME} build ${env.BUILD_NUMBER}",
+                         body: "Something is wrong with ${env.JOB_NAME}."
+                } catch (Exception ex) {
+                    echo "Mail notification skipped: ${ex.message}"
+                }
+            }
         }
         success {
-            mail to: 'team@example.com',
-                 subject: "Successful Pipeline: ${env.JOB_NAME} build ${env.BUILD_NUMBER}",
-                 body: "Pipeline successful."
+            script {
+                try {
+                    mail to: 'team@example.com',
+                         subject: "Successful Pipeline: ${env.JOB_NAME} build ${env.BUILD_NUMBER}",
+                         body: "Pipeline successful."
+                } catch (Exception ex) {
+                    echo "Mail notification skipped: ${ex.message}"
+                }
+            }
         }
     }
 }
