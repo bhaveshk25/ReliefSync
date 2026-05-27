@@ -2,10 +2,12 @@ import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { aiService } from "@/services/aiService";
 import { useToast } from "@/hooks/use-toast";
+import { getApiErrorMessage } from "@/utils/api";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
 import { Label } from "@/ui/label";
 import { Textarea } from "@/ui/textarea";
 import { Button } from "@/ui/button";
+import { LoadingSpinner } from "@/ui/loading-spinner";
 import { AIResultCard } from "@/components/AIResultCard";
 
 export function AIAnalysisPage() {
@@ -14,8 +16,11 @@ export function AIAnalysisPage() {
 
   const mutation = useMutation({
     mutationFn: aiService.analyze,
+    onSuccess: () => {
+      toast.success("AI analysis completed.");
+    },
     onError: (error) => {
-      toast.error(error.response?.data?.message || "Unable to run AI analysis.");
+      toast.error(getApiErrorMessage(error, "Unable to run AI analysis."));
     },
   });
 
@@ -39,6 +44,7 @@ export function AIAnalysisPage() {
             onClick={() => mutation.mutate({ description })}
             disabled={mutation.isPending}
           >
+            {mutation.isPending ? <LoadingSpinner /> : null}
             {mutation.isPending ? "Analyzing..." : "Analyze Emergency"}
           </Button>
         </CardContent>

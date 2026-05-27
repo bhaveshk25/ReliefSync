@@ -3,11 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
 import { incidentService } from "@/services/incidentService";
 import { useToast } from "@/hooks/use-toast";
+import { getApiErrorMessage } from "@/utils/api";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
 import { Label } from "@/ui/label";
 import { Input } from "@/ui/input";
 import { Textarea } from "@/ui/textarea";
 import { Button } from "@/ui/button";
+import { LoadingSpinner } from "@/ui/loading-spinner";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/ui/select";
 
 export function CreateIncidentPage() {
@@ -28,7 +30,7 @@ export function CreateIncidentPage() {
       navigate(`/incidents/${data.id}`);
     },
     onError: (error) => {
-      toast.error(error.response?.data?.message || "Unable to create incident.");
+      toast.error(getApiErrorMessage(error, "Unable to create incident."));
     },
   });
 
@@ -107,7 +109,10 @@ export function CreateIncidentPage() {
             />
           </div>
           <div className="md:col-span-2">
-            <Button disabled={mutation.isPending}>{mutation.isPending ? "Submitting..." : "Create Incident"}</Button>
+            <Button disabled={mutation.isPending}>
+              {mutation.isPending ? <LoadingSpinner /> : null}
+              {mutation.isPending ? "Submitting..." : "Create Incident"}
+            </Button>
           </div>
         </form>
       </CardContent>

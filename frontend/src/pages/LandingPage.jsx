@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, BrainCircuit, ShieldCheck, Users2 } from "lucide-react";
 import { fadeUp, staggerContainer } from "@/animations/motion";
 import { emergencyCategories, landingStats, liveIncidentFeed, testimonials, chartData } from "@/data/mockData";
+import { APP_NAME, publicNavItems } from "@/utils/constants";
 import { SectionHeading } from "@/components/SectionHeading";
 import { CategoryCard } from "@/components/CategoryCard";
 import { LiveIncidentFeed } from "@/components/LiveIncidentFeed";
@@ -15,6 +16,32 @@ export function LandingPage() {
   return (
     <div>
       <section className="relative overflow-hidden border-b border-white/10 bg-hero-grid">
+        <div className="section-shell pt-6">
+          <div className="glass-panel flex flex-col gap-4 rounded-full px-5 py-4 md:flex-row md:items-center md:justify-between">
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <p className="text-xs uppercase tracking-[0.3em] text-primary">Emergency OS</p>
+                <h2 className="mt-1 text-lg font-semibold">{APP_NAME}</h2>
+              </div>
+            </div>
+            <nav className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+              {publicNavItems.map((item) => (
+                <Link key={item.to} to={item.to} className="transition hover:text-foreground">
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+            <div className="flex flex-wrap gap-3">
+              <Button asChild variant="secondary">
+                <Link to="/login">Sign In</Link>
+              </Button>
+              <Button asChild>
+                <Link to="/register">Sign Up</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+
         <div className="section-shell grid min-h-[90vh] items-center gap-12 py-20 lg:grid-cols-[1.15fr_0.85fr]">
           <motion.div {...fadeUp}>
             <p className="mb-4 text-xs uppercase tracking-[0.35em] text-primary">AI Disaster Command Center</p>
@@ -104,6 +131,9 @@ export function LandingPage() {
                   </div>
                 ))}
               </div>
+              <Button asChild className="mt-8">
+                <Link to="/ai-analysis">Try AI Analysis</Link>
+              </Button>
             </CardContent>
           </Card>
         </div>
@@ -129,6 +159,14 @@ export function LandingPage() {
               <p className="mt-4 text-muted-foreground">
                 The built-in AI assistant helps first-time volunteers understand onboarding, supplies, emergency etiquette, and where to report.
               </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Button asChild>
+                  <Link to="/donations">View Donation Needs</Link>
+                </Button>
+                <Button asChild variant="secondary">
+                  <Link to="/alerts">Browse Active Alerts</Link>
+                </Button>
+              </div>
             </CardContent>
           </Card>
           <div className="grid gap-4 md:grid-cols-2">

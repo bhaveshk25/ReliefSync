@@ -1,5 +1,38 @@
 export const APP_NAME = import.meta.env.VITE_APP_NAME || "ReliefSync AI";
 
+export const appRoutes = {
+  landing: "/",
+  login: "/login",
+  register: "/register",
+  dashboard: "/dashboard",
+  incidents: "/incidents",
+  createIncident: "/incidents/new",
+  aiAnalysis: "/ai-analysis",
+  heatmap: "/heatmap",
+  reports: "/reports",
+  alerts: "/alerts",
+  donations: "/donations",
+};
+
+export const publicNavItems = [
+  { label: "Home", to: appRoutes.landing },
+  { label: "Reports", to: appRoutes.reports },
+  { label: "Alerts", to: appRoutes.alerts },
+  { label: "Donations", to: appRoutes.donations },
+];
+
+export const sidebarNavItems = [
+  { label: "Overview", to: appRoutes.dashboard, icon: "LayoutDashboard" },
+  { label: "Incidents", to: appRoutes.incidents, icon: "ShieldAlert" },
+  { label: "Report Incident", to: appRoutes.createIncident, icon: "PlusCircle" },
+  { label: "AI Analysis", to: appRoutes.aiAnalysis, icon: "Sparkles" },
+  { label: "Heatmap", to: appRoutes.heatmap, icon: "Map" },
+  { label: "Reports", to: appRoutes.reports, icon: "FileText" },
+  { label: "Alerts", to: appRoutes.alerts, icon: "BellRing" },
+  { label: "Donations", to: appRoutes.donations, icon: "HandCoins" },
+  { label: "Landing", to: appRoutes.landing, icon: "Home" },
+];
+
 export const roleLabels = {
   ROLE_ADMIN: "Admin",
   ROLE_COORDINATOR: "Coordinator",

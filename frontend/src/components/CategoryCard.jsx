@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/ui/button";
 
 export function CategoryCard({ category }) {
@@ -29,9 +30,11 @@ export function CategoryCard({ category }) {
           <span className="text-muted-foreground">Quick mobilization action</span>
           <span className="font-medium text-primary">{category.responders} active</span>
         </div>
-        <Button variant="secondary" className="mt-5 w-full justify-between">
-          {category.cta}
-          <ArrowUpRight className="h-4 w-4" />
+        <Button asChild variant="secondary" className="mt-5 w-full justify-between">
+          <Link to={category.ctaTo || "/dashboard"}>
+            {category.cta}
+            <ArrowUpRight className="h-4 w-4" />
+          </Link>
         </Button>
       </div>
     </motion.div>

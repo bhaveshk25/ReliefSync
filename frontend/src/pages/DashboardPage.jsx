@@ -1,26 +1,23 @@
 import { useQuery } from "@tanstack/react-query";
 import { dashboardStats, chartData, activityFeed } from "@/data/mockData";
 import { incidentService } from "@/services/incidentService";
+import { getApiErrorMessage } from "@/utils/api";
 import { StatsGrid } from "@/components/StatsGrid";
 import { IncidentTable } from "@/components/IncidentTable";
 import { AnalyticsCharts } from "@/components/AnalyticsCharts";
 import { QuickActions } from "@/components/QuickActions";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
+import { Button } from "@/ui/button";
 import { Skeleton } from "@/ui/skeleton";
-import { useMemo } from "react";
+import { Link } from "react-router-dom";
 
 export function DashboardPage() {
-  const { data, isLoading, isError, error } = useQuery({
+  const { data, isLoading, isError, error, refetch, isFetching } = useQuery({
     queryKey: ["dashboard-incidents"],
     queryFn: () => incidentService.list({ page: 0, size: 5, sort: "createdAt,desc" }),
     refetchOnWindowFocus: false,
     staleTime: 30000,
   });
-
-  // Memoize stats to prevent unnecessary recalculations
-  const memoizedStats = useMemo(() => dashboardStats, [dashboardStats]);
-  const memoizedChartData = useMemo(() => chartData, [chartData]);
-  const memoizedActivityFeed = useMemo(() => activityFeed, [activityFeed]);
 
   if (isError) {
     return (
@@ -33,13 +30,12 @@ export function DashboardPage() {
             <p className="text-muted-foreground">
               Unable to load dashboard data. Please check your connection and try again.
             </p>
-            {/* In development, show error details */}
-            {process.env.NODE_ENV === "development" && (
+            {import.meta.env.DEV && (
               <div className="text-xs text-destructive/50 bg-destructive/5 rounded p-3 mt-2">
-                {error?.message || "Unknown error"}
+                {getApiErrorMessage(error, "Unknown error")}
               </div>
             )}
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" onClick={() => refetch()}>
               Retry
             </Button>
           </CardContent>
@@ -50,8 +46,18 @@ export function DashboardPage() {
 
   return (
     <div className="space-y-6">
+      <div className="flex items-center justify-between gap-3">
+        <div>
+          <p className="text-xs uppercase tracking-[0.25em] text-primary">Operations Overview</p>
+          <h1 className="mt-2 text-3xl font-semibold">Response dashboard</h1>
+        </div>
+        <Button variant="secondary" onClick={() => refetch()} disabled={isFetching}>
+          {isFetching ? "Refreshing..." : "Refresh"}
+        </Button>
+      </div>
+
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <StatsGrid items={memoizedStats} />
+        <StatsGrid items={dashboardStats} />
       </div>
 
       <div className="grid gap-6 xl:grid-cols-[1.5fr_1fr]">
@@ -62,7 +68,7 @@ export function DashboardPage() {
               <div className="flex items-center justify-between">
                 <CardTitle>Recent Incidents</CardTitle>
                 <Button asChild size="sm" variant="outline">
-                  View All
+                  <Link to="/incidents">View All</Link>
                 </Button>
               </div>
             </CardHeader>
@@ -93,7 +99,7 @@ export function DashboardPage() {
                 <CardTitle>Recent Activity</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
-                {memoizedActivityFeed.map((item, index) => (
+                {activityFeed.map((item, index) => (
                   <div
                     key={item}
                     className={`
@@ -115,7 +121,7 @@ export function DashboardPage() {
 
         {/* Analytics Sidebar */}
         <div className="space-y-4">
-          <AnalyticsCharts chartData={memoizedChartData} />
+          <AnalyticsCharts chartData={chartData} />
         </div>
       </div>
     </div>

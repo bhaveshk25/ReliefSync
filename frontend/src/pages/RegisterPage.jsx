@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { useToast } from "@/hooks/use-toast";
+import { getApiErrorMessage } from "@/utils/api";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/ui/card";
 import { Label } from "@/ui/label";
 import { Input } from "@/ui/input";
 import { Button } from "@/ui/button";
+import { LoadingSpinner } from "@/ui/loading-spinner";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/ui/select";
 
 export function RegisterPage() {
@@ -28,7 +30,7 @@ export function RegisterPage() {
       toast.success("Account created successfully.");
       navigate("/dashboard");
     } catch (error) {
-      toast.error(error.response?.data?.message || "Unable to create account.");
+      toast.error(getApiErrorMessage(error, "Unable to create account."));
     } finally {
       setIsSubmitting(false);
     }
@@ -49,6 +51,7 @@ export function RegisterPage() {
               value={form.fullName}
               onChange={(event) => setForm((current) => ({ ...current, fullName: event.target.value }))}
               placeholder="Priya Sharma"
+              minLength={2}
               required
             />
           </div>
@@ -71,6 +74,7 @@ export function RegisterPage() {
               value={form.password}
               onChange={(event) => setForm((current) => ({ ...current, password: event.target.value }))}
               placeholder="At least 8 characters"
+              minLength={8}
               required
             />
           </div>
@@ -88,6 +92,7 @@ export function RegisterPage() {
             </Select>
           </div>
           <Button className="w-full" disabled={isSubmitting}>
+            {isSubmitting ? <LoadingSpinner /> : null}
             {isSubmitting ? "Creating Account..." : "Create Account"}
           </Button>
         </form>

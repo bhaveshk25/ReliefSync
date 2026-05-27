@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { incidentService } from "@/services/incidentService";
+import { getApiErrorMessage } from "@/utils/api";
 import { severityColors, statusColors } from "@/utils/constants";
 import { cn } from "@/utils/cn";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
@@ -9,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
 export function IncidentDetailPage() {
   const { incidentId } = useParams();
 
-  const { data, isLoading } = useQuery({
+  const { data, isLoading, isError, error } = useQuery({
     queryKey: ["incident", incidentId],
     queryFn: () => incidentService.getById(incidentId),
   });
@@ -23,6 +24,19 @@ export function IncidentDetailPage() {
     return (
       <Card className="rounded-3xl">
         <CardContent className="p-6 text-sm text-muted-foreground">Loading incident details...</CardContent>
+      </Card>
+    );
+  }
+
+  if (isError) {
+    return (
+      <Card className="rounded-3xl">
+        <CardHeader>
+          <CardTitle>Unable to load incident</CardTitle>
+        </CardHeader>
+        <CardContent className="text-sm text-muted-foreground">
+          {getApiErrorMessage(error, "The incident details could not be loaded.")}
+        </CardContent>
       </Card>
     );
   }

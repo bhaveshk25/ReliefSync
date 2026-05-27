@@ -1,17 +1,20 @@
 import { NavLink } from "react-router-dom";
-import { APP_NAME, roleLabels } from "@/utils/constants";
+import { APP_NAME, roleLabels, sidebarNavItems } from "@/utils/constants";
 import { useAuth } from "@/hooks/useAuth";
-import { Home, LayoutDashboard, Map, PlusCircle, ShieldAlert, Sparkles } from "lucide-react";
+import { BellRing, FileText, HandCoins, Home, LayoutDashboard, Map, PlusCircle, ShieldAlert, Sparkles } from "lucide-react";
 import { cn } from "@/utils/cn";
 
-const navItems = [
-  { to: "/dashboard", label: "Overview", icon: LayoutDashboard },
-  { to: "/incidents", label: "Incidents", icon: ShieldAlert },
-  { to: "/incidents/new", label: "Report Incident", icon: PlusCircle },
-  { to: "/ai-analysis", label: "AI Analysis", icon: Sparkles },
-  { to: "/heatmap", label: "India Heatmap", icon: Map },
-  { to: "/", label: "Landing", icon: Home },
-];
+const iconMap = {
+  BellRing,
+  FileText,
+  HandCoins,
+  Home,
+  LayoutDashboard,
+  Map,
+  PlusCircle,
+  ShieldAlert,
+  Sparkles,
+};
 
 export function Sidebar({ mobile = false, className }) {
   const { user } = useAuth();
@@ -36,8 +39,8 @@ export function Sidebar({ mobile = false, className }) {
       </div>
 
       <nav className="space-y-2">
-        {navItems.map((item) => {
-          const Icon = item.icon;
+        {sidebarNavItems.map((item) => {
+          const Icon = iconMap[item.icon];
           return (
             <NavLink
               key={item.to}

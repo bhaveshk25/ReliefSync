@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { useToast } from "@/hooks/use-toast";
+import { getApiErrorMessage } from "@/utils/api";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/ui/card";
 import { Label } from "@/ui/label";
 import { Input } from "@/ui/input";
 import { Button } from "@/ui/button";
+import { LoadingSpinner } from "@/ui/loading-spinner";
 
 export function LoginPage() {
   const navigate = useNavigate();
@@ -25,7 +27,7 @@ export function LoginPage() {
       toast.success("Welcome back to ReliefSync AI.");
       navigate(from, { replace: true });
     } catch (error) {
-      toast.error(error.response?.data?.message || "Unable to sign in.");
+      toast.error(getApiErrorMessage(error, "Unable to sign in."));
     } finally {
       setIsSubmitting(false);
     }
@@ -58,10 +60,12 @@ export function LoginPage() {
               value={form.password}
               onChange={(event) => setForm((current) => ({ ...current, password: event.target.value }))}
               placeholder="Enter your password"
+              minLength={8}
               required
             />
           </div>
           <Button className="w-full" disabled={isSubmitting}>
+            {isSubmitting ? <LoadingSpinner /> : null}
             {isSubmitting ? "Signing In..." : "Sign In"}
           </Button>
         </form>

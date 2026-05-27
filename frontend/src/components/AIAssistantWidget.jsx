@@ -5,6 +5,7 @@ import { assistantService } from "@/services/assistantService";
 import { Button } from "@/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
 import { Input } from "@/ui/input";
+import { LoadingSpinner } from "@/ui/loading-spinner";
 import { ScrollArea } from "@/ui/scroll-area";
 
 const starterQuestions = [
@@ -130,7 +131,7 @@ export function AIAssistantWidget() {
                     }}
                   />
                   <Button size="icon" onClick={() => sendMessage(input)} disabled={isLoading}>
-                    <SendHorizontal className="h-4 w-4" />
+                    {isLoading ? <LoadingSpinner /> : <SendHorizontal className="h-4 w-4" />}
                   </Button>
                 </div>
               </CardContent>

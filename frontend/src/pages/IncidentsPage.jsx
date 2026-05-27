@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { Search } from "lucide-react";
 import { incidentService } from "@/services/incidentService";
 import { useToast } from "@/hooks/use-toast";
+import { getApiErrorMessage } from "@/utils/api";
 import { Button } from "@/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
 import { Input } from "@/ui/input";
@@ -16,11 +17,16 @@ export function IncidentsPage() {
   const [page, setPage] = useState(0);
   const [filters, setFilters] = useState({ search: "", sort: "createdAt,desc" });
 
-  const { data, isLoading } = useQuery({
+  const { data, isLoading, isError, error } = useQuery({
     queryKey: ["incidents", page, filters],
     queryFn: () => incidentService.list({ page, size: 8, sort: filters.sort }),
-    onError: () => toast.error("Unable to load incidents."),
   });
+
+  useEffect(() => {
+    if (isError) {
+      toast.error(getApiErrorMessage(error, "Unable to load incidents."));
+    }
+  }, [error, isError, toast]);
 
   const filteredContent =
     data?.content?.filter((incident) => {
@@ -72,6 +78,12 @@ export function IncidentsPage() {
         {isLoading ? (
           <Card className="rounded-3xl">
             <CardContent className="p-6 text-sm text-muted-foreground">Loading incidents...</CardContent>
+          </Card>
+        ) : filteredContent.length === 0 ? (
+          <Card className="rounded-3xl">
+            <CardContent className="p-6 text-sm text-muted-foreground">
+              No incidents matched your current filters.
+            </CardContent>
           </Card>
         ) : (
           filteredContent.map((incident) => (

@@ -15,6 +15,9 @@ const IncidentDetailPage = lazy(() => import("@/pages/IncidentDetailPage").then(
 const CreateIncidentPage = lazy(() => import("@/pages/CreateIncidentPage").then((module) => ({ default: module.CreateIncidentPage })));
 const AIAnalysisPage = lazy(() => import("@/pages/AIAnalysisPage").then((module) => ({ default: module.AIAnalysisPage })));
 const HeatmapPage = lazy(() => import("@/pages/HeatmapPage").then((module) => ({ default: module.HeatmapPage })));
+const ReportsPage = lazy(() => import("@/pages/ReportsPage").then((module) => ({ default: module.ReportsPage })));
+const AlertsPage = lazy(() => import("@/pages/AlertsPage").then((module) => ({ default: module.AlertsPage })));
+const DonationsPage = lazy(() => import("@/pages/DonationsPage").then((module) => ({ default: module.DonationsPage })));
 const NotFoundPage = lazy(() => import("@/pages/NotFoundPage").then((module) => ({ default: module.NotFoundPage })));
 
 function withSuspense(node) {
@@ -52,6 +55,9 @@ export const router = createBrowserRouter([
       { path: "/incidents/:incidentId", element: withSuspense(<IncidentDetailPage />) },
       { path: "/ai-analysis", element: withSuspense(<AIAnalysisPage />) },
       { path: "/heatmap", element: withSuspense(<HeatmapPage />) },
+      { path: "/reports", element: withSuspense(<ReportsPage />) },
+      { path: "/alerts", element: withSuspense(<AlertsPage />) },
+      { path: "/donations", element: withSuspense(<DonationsPage />) },
     ],
   },
   {

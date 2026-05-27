@@ -17,6 +17,7 @@ export const emergencyCategories = [
     incidents: 48,
     responders: 186,
     cta: "Deploy Boats",
+    ctaTo: "/alerts",
     accent: "from-sky-400/25 to-cyan-400/5",
   },
   {
@@ -25,6 +26,7 @@ export const emergencyCategories = [
     incidents: 14,
     responders: 62,
     cta: "Assess Damage",
+    ctaTo: "/reports",
     accent: "from-amber-400/25 to-orange-400/5",
   },
   {
@@ -33,6 +35,7 @@ export const emergencyCategories = [
     incidents: 73,
     responders: 240,
     cta: "Dispatch Medics",
+    ctaTo: "/incidents/new",
     accent: "from-rose-400/25 to-red-400/5",
   },
   {
@@ -41,6 +44,7 @@ export const emergencyCategories = [
     incidents: 19,
     responders: 71,
     cta: "Send Fire Team",
+    ctaTo: "/alerts",
     accent: "from-orange-400/25 to-rose-400/5",
   },
   {
@@ -49,6 +53,7 @@ export const emergencyCategories = [
     incidents: 31,
     responders: 102,
     cta: "Open Relief Hub",
+    ctaTo: "/donations",
     accent: "from-emerald-400/25 to-teal-400/5",
   },
   {
@@ -57,6 +62,7 @@ export const emergencyCategories = [
     incidents: 11,
     responders: 39,
     cta: "Start Search",
+    ctaTo: "/reports",
     accent: "from-violet-400/25 to-indigo-400/5",
   },
   {
@@ -65,6 +71,7 @@ export const emergencyCategories = [
     incidents: 9,
     responders: 55,
     cta: "Secure Coastline",
+    ctaTo: "/alerts",
     accent: "from-blue-400/25 to-slate-400/5",
   },
   {
@@ -73,6 +80,7 @@ export const emergencyCategories = [
     incidents: 26,
     responders: 84,
     cta: "Activate Cooling Aid",
+    ctaTo: "/donations",
     accent: "from-yellow-400/25 to-orange-400/5",
   },
 ];
